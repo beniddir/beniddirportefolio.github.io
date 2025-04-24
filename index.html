@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candidature</title>
+    <!-- lien css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- lien css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- lien icons Bootstrap  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        p {
+            font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 50px;
+            padding-left: 20px;
+
+        }
+
+        p:hover {
+            transform: scale(1.2);
+        }
+
+        .nom {
+            font-size: 50px;
+            color: #fd6152;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            margin-bottom: 300px;
+
+
+
+        }
+
+        .image {
+            height: 50%;
+            width: 50%;
+
+
+
+        }
+
+        .presentation {
+            font-size: 20px;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(2deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(-2deg);
+            }
+        }
+
+        .recruter {
+            width: 20%;
+            animation: floating 2s ease-in-out infinite;
+
+        }
+
+        /* Effet flottant au survol */
+        .recruter:hover {
+            animation: floating 2s ease-in-out infinite;
+            /* Animation continue au survol */
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+            /* Ombre portée */
+        }
+
+        .liste {
+            border-radius: 50%;
+            box-shadow: #fd6152;
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+
+    <header class="container-fluid text-center my-5 bg-dark">
+        <div class="row align-items-center text-center text-md-left">
+            <!-- Logo -->
+            <div class="col-12 col-lg-2 mb-3 mb-lg-0 d-flex justify-content-center">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 70px;">
+                </a>
+
+            </div>
+            <!-- Titre -->
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                <h1 class="text-white"> Développeur <br>Web & Applications No-Code </h1>
+            </div>
+            <!-- Liens sous forme de boutons -->
+            <div
+                class="col-12 col-lg-6 d-flex flex-column flex-md-row justify-content-md-around justify-content-center">
+                <a href="formations.html" class="btn btn-success mb-2 mb-md-0 mx-md-2">Mes Formations</a>
+                <a href="competences.html" class="btn btn-success mb-2 mb-md-0 mx-md-2">Mes Compétences</a>
+                <a href="contact.html" class="btn btn-success mx-md-2 px-5">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero container-fluid text-center my-5 ">
+        <div class="hero-text text-center">
+            <h6 class="text-center text-white fs-3">Bonjour, <span> je m'appelle </span></h6>
+
+            <h2 class="text-white"><span class="nom">Radhia BENIDDIR</span> </h2>
+            <h1 class="text-white"> Je suis <span class="input"></span></h1>
+
+        </div>
+    </section><!-- -->
+    <section class="container-fluid text-center my-5 ">
+        <div class="row align-items-center">
+            <!-- Colonne Texte -->
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p class="mx-5 text-white  presentation ">
+                    Passionnée par l'innovation numérique, je me spécialise dans le développement web et la création
+                    d’applications en No Code. Forte d'une année d’expérience en développement web, j’ai acquis des
+                    compétences solides en HTML, CSS, Bootstrap, JavaScript, MySQL et PHP, qui m’ont permis de
+                    comprendre en profondeur le fonctionnement des sites et applications web.
+
+                    En parallèle, j’ai découvert le potentiel des outils No Code tels que WordPress, Divi, Webflow,
+                    Airtable et Make, qui permettent de concevoir rapidement des solutions digitales sur-mesure,
+                    intuitives et performantes, sans coder. Aujourd’hui, j’allie mes connaissances techniques au No Code
+                    pour répondre efficacement aux besoins des utilisateurs et des entreprises.
+
+                    Organisée, dotée d’un bon esprit d’équipe et capable de m’adapter rapidement à tout environnement,
+                    je suis motivée à continuer de progresser dans ce domaine en constante évolution. Mon objectif est
+                    de contribuer activement à des projets innovants, tout en apportant une réelle valeur ajoutée grâce
+                    à mon expertise en développement web et en No Code.
+
+                </p>
+            </div>
+            <!-- Colonne Image -->
+            <div class=" image col-12 col-md-6 text-center ">
+                <img src="photo (2).png" alt="Description de l'image" class=" image1 img-fluid rounded-circle  image">
+
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="div">
+
+        </div>
+    </section>
+    <section class="container-fluid text-center my-5">
+        <div class="row justify-content-center">
+            <!-- Bouton 1 : Télécharger le CV -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <a href="cv.pdf" class="btn btn-success btn-block" download>Télécharger CV</a>
+            </div>
+
+            <!-- Bouton 2 : Télécharger la lettre de motivation -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <a href="LM.pdf" class="btn btn-success btn-block" download>Télécharger LM</a>
+            </div>
+
+            <!-- Bouton 3 : Réalisation avec Code -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <a href="exemplecode.html" class="btn btn-success btn-block">Réalisation avec Code</a>
+            </div>
+
+            <!-- Bouton 4 : Réalisation sans Code -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <a href="exemplenocode.html" class="btn btn-success btn-block">Réalisation sans Code</a>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid text-center my-5">
+        <div class="row align-items-center">
+
+            <!-- Colonne Image -->
+            <div class="col-12 col-md-6  mx-auto recruter">
+                <img src="recrutez-moi.jpg" alt="Votre photo" class="img-fluid rounded-circle w-75">
+            </div>
+            <!-- Colonne Texte -->
+            <div class="col-12 col-md-6 mb-3 mb-md-0 text-dark bg-light p-4 liste ">
+                <h2 class="mx-5 text-light bg-success  ">Mes Coordonnées</h2>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        Téléphone : 07 81 00 05 54
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        Adresse : 05 rue de l'Égalité, Nanterre 92 000
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        Adresse Mail : <a href="mailto:benidir.radhia@gmail.com">benidir.radhia@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+
+    <!-- lien js Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript">
+        var type = new Typed(".input", {
+            strings: ["Développeuse web"],
+            typeSpeed: 80,
+            backSpeed: 70,
+            loop: true
+        });
+
+
+
+    </script>
+
+
+
+
+
+</body>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Portefolio Radhia BENIDDIR. Tous droits réservés.</p>
+</footer>
+
+
+</html>
